@@ -1,8 +1,8 @@
 <template>
     <div class="container mx-auto py-10 flex flex-col justify-center items-center">
-        <h2 class="text-white font-bold text-5xl py-10 text-center w-2/3">From rough design files, to powerful products</h2>
-        <p class="w-1/2 pb-14 text-xl text-center pt-5 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea magni molestiae obcaecati odit placeat repudiandae tempora! Delectus dolores, laudantium nemo porro rem repudiandae veniam?</p>
-        <swiper-container slides-per-view="3" speed="500" loop="true" css-mode="true">
+        <h2 class="text-white font-bold text-5xl py-10 text-center md:w-2/3">From rough design files, to powerful products</h2>
+        <p class="md:w-1/2 pb-14 text-xl text-center pt-5 text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea magni molestiae obcaecati odit placeat repudiandae tempora! Delectus dolores, laudantium nemo porro rem repudiandae veniam?</p>
+        <swiper-container slides-per-view="3" speed="500" loop="true">
             <swiper-slide>
                 <img class="slide-image px-2"
                      src="https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2021-12/211208-working-out-stock-mn-1310-55e1c7.jpg"

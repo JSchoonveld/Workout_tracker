@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Exercise;
+use App\Models\Set;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 
 class ExerciseController extends Controller
 {
@@ -14,7 +16,11 @@ class ExerciseController extends Controller
      */
     public function index()
     {
-        //
+        $exercises = Exercise::all();
+
+        return Inertia::render('exercises/Exercises', [
+            'exercises' => $exercises
+        ]);
     }
 
     /**
@@ -46,7 +52,35 @@ class ExerciseController extends Controller
      */
     public function show(Exercise $exercise)
     {
-        //
+//        $exercise = Exercise::find(7);
+//        $sets = Set::where('exercise_id', $exercise->id)->where('workout_id', '1')->get();
+//
+//        $labels = [];
+//        $data = [];
+//
+//        foreach ($sets as $set) {
+//            $date = $set->created_at->format('d-m-Y');
+//            if (!in_array($date, $labels)) {
+//                $labels[] = $date;
+//            }
+//            if (!isset($data[$date])) {
+//                $data[$date] = 0;
+//            }
+//            $data[$date] += 1;
+//        }
+//
+//        $chartData = [
+//            'labels' => $labels,
+//            'datasets' => [
+//                [
+//                    'data' => array_values($data),
+//                ],
+//            ],
+//        ];
+
+        return Inertia::render('exercises/Show', [
+            'exercise' => $exercise
+        ]);
     }
 
     /**

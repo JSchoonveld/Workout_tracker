@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
       $this->call([
+          BodypartSeeder::class,
           UserSeeder::class,
           ExerciseSeeder::class,
           WorkoutSeeder::class,

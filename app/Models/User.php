@@ -43,8 +43,8 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-//    public function exercises(): HasMany
-//    {
-//        return $this->hasMany(Exercise::class);
-//    }
+    public function workouts(): HasMany
+    {
+        return $this->hasMany(Workout::class);
+    }
 }

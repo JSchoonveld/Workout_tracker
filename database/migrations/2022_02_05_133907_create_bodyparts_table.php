@@ -13,14 +13,9 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('sets', function (Blueprint $table) {
+        Schema::create('bodyparts', function (Blueprint $table) {
             $table->id();
-            $table->integer('reps')->default(0);
-            $table->float('weight')->default(0);
-            $table->unsignedBigInteger('workout_id');
-            $table->foreign('workout_id')->references('id')->on('workouts');
-            $table->unsignedBigInteger('exercise_id');
-            $table->foreign('exercise_id')->references('id')->on('exercises');
+            $table->string('name');
             $table->timestamps();
         });
     }
@@ -32,6 +27,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('sets');
+        Schema::dropIfExists('bodyparts');
     }
 };

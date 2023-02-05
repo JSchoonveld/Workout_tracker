@@ -18,6 +18,8 @@
         "vue": "^3.2.41"
     },
     "dependencies": {
-        "swiper": "^9.0.2"
+        "chart.js": "^4.2.0",
+        "swiper": "^9.0.2",
+        "vue-chartjs": "^5.2.0"
     }
 }
