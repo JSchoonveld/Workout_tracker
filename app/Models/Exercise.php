@@ -10,8 +10,13 @@ class Exercise extends Model
 {
     use HasFactory;
 
-//    public function exercises(): HasMany
-//    {
-//        return $this->hasMany(User::class);
-//    }
+    public function sets(): HasMany
+    {
+        return $this->hasMany(Set::class);
+    }
+
+    public function bodyparts(): HasMany
+    {
+        return $this->hasMany(Bodypart::class);
+    }
 }

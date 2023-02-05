@@ -21,7 +21,9 @@ class SetFactory extends Factory
         return [
             'workout_id' => Workout::class,
             'exercise_id' => Exercise::class,
-            'reps' => rand(5,20)
+            'reps' => rand(5,20),
+            'weight' => rand(1, 200),
+            'created_at' =>  now()->subDays(rand(0, now()->diffInDays(now()->startOfYear())))
         ];
     }
 }

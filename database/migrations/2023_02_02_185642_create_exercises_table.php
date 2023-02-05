@@ -18,7 +18,7 @@ return new class extends Migration
             $table->id();
             $table->string('name', 255);
             $table->enum('type', [ExerciseTypeEnum::FREE_WEIGHT(), ExerciseTypeEnum::MACHINE()]);
-            $table->json('categories');
+            $table->json('bodyparts');
             $table->timestamps();
         });
     }

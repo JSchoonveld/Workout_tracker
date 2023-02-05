@@ -22,7 +22,7 @@ class WorkoutSeeder extends Seeder
             Workout::factory()->count(5)->create([
                 'user_id' => $user->id,
             ])->each(function($workout){
-                Set::factory()->count(rand(15, 25))->create([
+                Set::factory()->count(rand(25, 50))->create([
                     'workout_id' => $workout->id,
                     'exercise_id' => Exercise::all()->random()->id,
                 ]);

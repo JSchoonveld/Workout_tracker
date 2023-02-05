@@ -11,7 +11,7 @@ const showingNavigationDropdown = ref(false);
 
 <template>
     <div class="min-h-screen">
-        <nav class="bg-white dark:bg-classy-dark dark:text-gray-100 fixed w-full">
+        <nav class="bg-white dark:bg-classy-dark dark:text-gray-100 fixed w-screen">
             <!-- Primary Navigation Menu -->
             <div class="container mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="flex justify-between h-16">
@@ -34,6 +34,10 @@ const showingNavigationDropdown = ref(false);
                             <NavLink class="text-gray-700 dark:text-white focus:border-primary hover:border-primary" :href="route('about')"
                                      :active="route().current('about')">
                                 About
+                            </NavLink>
+                            <NavLink class="text-gray-700 dark:text-white focus:border-primary hover:border-primary" :href="route('exercises')"
+                                     :active="route().current('exercises')">
+                                Exercises
                             </NavLink>
                             <NavLink class="text-gray-700 dark:text-white focus:border-primary hover:border-primary" :href="route('dashboard')"
                                      :active="route().current('dashboard')">
@@ -100,6 +104,9 @@ const showingNavigationDropdown = ref(false);
                 <div class="pt-2 pb-3 space-y-1">
                     <ResponsiveNavLink :href="route('home')" :active="route().current('home')">
                         Home
+                    </ResponsiveNavLink>
+                    <ResponsiveNavLink :href="route('about')" :active="route().current('about')">
+                        About
                     </ResponsiveNavLink>
                     <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                         Dashboard

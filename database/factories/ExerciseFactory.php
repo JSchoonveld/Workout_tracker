@@ -21,7 +21,7 @@ class ExerciseFactory extends Factory
         return [
             'name' => fake()->sentence(),
             'type' => ExerciseTypeEnum::toValues()[rand(0,1)],
-            'categories' => json_encode(['chest', 'triceps']),
+            'bodyparts' => json_encode([1, 2]),
         ];
     }
 }

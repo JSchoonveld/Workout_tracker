@@ -34,6 +34,10 @@ const showingNavigationDropdown = ref(false);
                                 <NavLink class="active:text-white dark:text-white" :href="route('about')" :active="route().current('about')">
                                     About
                                 </NavLink>
+                                <NavLink class="text-gray-700 dark:text-white focus:border-primary hover:border-primary" :href="route('exercises')"
+                                         :active="route().current('exercises')">
+                                    Exercises
+                                </NavLink>
                                 <NavLink class="active:text-white dark:text-white" :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </NavLink>
@@ -119,6 +123,9 @@ const showingNavigationDropdown = ref(false);
                     <div class="pt-2 pb-3 space-y-1">
                         <ResponsiveNavLink :href="route('home')" :active="route().current('home')">
                             Home
+                        </ResponsiveNavLink>
+                        <ResponsiveNavLink :href="route('about')" :active="route().current('about')">
+                            About
                         </ResponsiveNavLink>
                         <ResponsiveNavLink :href="route('dashboard')" :active="route().current('dashboard')">
                             Dashboard

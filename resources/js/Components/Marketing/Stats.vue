@@ -1,11 +1,11 @@
 <template>
-        <div class="container px-5 py-24 mx-auto">
+        <div class="container px-5 md:py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
-                <h2 class="sm:text-5xl text-2xl font-bold font-medium title-font mb-4 text-gray-900 dark:text-gray-100">With the stats to prove it!</h2>
+                <h2 class="sm:text-5xl text-3xl font-bold font-medium title-font mb-4 text-gray-900 dark:text-gray-100">With the stats to prove it!</h2>
                 <p class="lg:w-2/3 mx-auto leading-relaxed text-gray-400">Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard of them man bun deep jianbing selfies heirloom prism food truck ugh squid celiac humblebrag.</p>
             </div>
-            <div class="flex flex-wrap -m-4 text-center">
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+            <div class="flex flex-wrap -m-4 text-center justify-center pb-10 md:pb-0">
+                <div class="p-4 lg:w-1/3 sm:w-1/2 w-full">
                     <div class=" px-4 bg-gray-700 py-10 rounded-lg">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-slate-900 dark:text-white w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                             <path d="M8 17l4 4 4-4m-4-5v9"></path>
@@ -14,7 +14,7 @@
                         <h3 class="title-font font-medium text-3xl text-gray-900 dark:text-gray-100">2.7K workouts</h3>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="p-4 lg:w-1/3 sm:w-1/2 w-full">
                     <div class=" px-4 bg-gray-700 py-10 rounded-lg">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-slate-900 dark:text-white w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                             <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"></path>
@@ -24,7 +24,7 @@
                         <h3 class="title-font font-medium text-3xl text-gray-900 dark:text-gray-100">500 users</h3>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+                <div class="p-4 lg:w-1/3 sm:w-1/2 w-full">
                     <div class=" px-4 bg-gray-700 py-10 rounded-lg">
                         <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-slate-900 dark:text-white w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
                             <path d="M3 18v-6a9 9 0 0118 0v6"></path>
@@ -33,14 +33,7 @@
                         <h3 class="title-font font-medium text-3xl text-gray-900 dark:text-gray-100">8542 PR's</h3>
                     </div>
                 </div>
-                <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
-                    <div class=" px-4 bg-gray-700 py-10 rounded-lg">
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="text-slate-900 dark:text-white w-12 h-12 mb-3 inline-block" viewBox="0 0 24 24">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                        <h3 class="title-font font-medium text-3xl text-gray-900 dark:text-gray-100">46</h3>
-                    </div>
-                </div>
+
             </div>
         </div>
 </template>
